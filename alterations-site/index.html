@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wedding gown and special-occasion alterations in Tyler, Texas. Twenty-five years of bridal tailoring on Old Bullard Road. By appointment &mdash; call (903) 744-0671.">
+<meta name="theme-color" content="#8B26CD">
+
+<!-- TODO before launch: set the real domain here and add og-image.jpg (1200x630px) -->
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wedding Gown Alterations in Tyler, Texas">
+<meta property="og:description" content="Twenty-five years of bridal and special-occasion tailoring. One seamstress, start to finish.">
+<meta property="og:image" content="/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>Wedding Gown Alterations in Tyler, Texas | CustomStitchStudio LLC</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600;700&family=Yellowtail&display=swap">
+<style>
+  /* ============================================================
+     Single-theme by design: this is a mockup of a public website,
+     so every viewer must see exactly what her customers will see.
+     All colours are painted explicitly.
+     Palette + type per the "Thread & Violet" style guide.
+     ============================================================ */
+  :root{
+    --ground:#FAF7F5;
+    --surface:#FFFFFF;
+    --linen:#F2EDE9;
+    --ink:#2A1B33;
+    --ink-soft:#5C4A66;
+    --ink-mute:#8A7B92;
+    --line:#E4DAD9;
+    --violet:#8B26CD;
+    --plum:#5B1A86;
+    --rose:#C74B88;
+    --magenta:#B03DA2;
+    --slate:#5F7FAD;
+    --dusty:#A4B7C9;
+    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:"Karla", "Helvetica Neue", Arial, sans-serif;
+    --script:"Yellowtail", "Brush Script MT", cursive;
+    --gradient:linear-gradient(95deg,#C74B88 0%,#B03DA2 45%,#8B26CD 100%);
+    --shadow-sm:0 1px 2px rgba(42,27,51,.05), 0 6px 18px -10px rgba(42,27,51,.18);
+    --shadow-md:0 2px 4px rgba(42,27,51,.06), 0 18px 40px -20px rgba(42,27,51,.28);
+    --wrap:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  /* keep anchored sections clear of the sticky header */
+  [id]{scroll-margin-top:96px}
+  @media (max-width:700px){ [id]{scroll-margin-top:82px} }
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font-family:var(--sans);font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+  img{max-width:100%}
+  a{color:var(--violet)}
+
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.005em}
+  .eyebrow{
+    font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--violet);margin:0 0 14px;
+  }
+
+  /* ---------------- draft notice ---------------- */
+  .draft{
+    background:#2A1B33;color:#EFE7F2;font-size:13.5px;line-height:1.55;
+    padding:14px 0;border-bottom:3px solid;border-image:var(--gradient) 1;
+  }
+  .draft .wrap{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+  .draft b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px;
+    background:rgba(255,255,255,.12);padding:4px 10px;border-radius:20px;white-space:nowrap;flex:none}
+  .draft p{margin:0;flex:1;min-width:240px;color:#CFC2D6}
+  .draft p em{color:#EBB8D8;font-style:normal}
+
+  /* ---------------- header ---------------- */
+  header.site{
+    position:sticky;top:0;z-index:50;background:rgba(250,247,245,.94);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  }
+  header.site .wrap{display:flex;align-items:center;gap:18px;height:82px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0;flex:0 1 auto;overflow:hidden}
+  .logo svg{width:clamp(21px,3.4vw,30px);height:auto;flex:none}
+  .logo .word{
+    font-family:var(--script);font-size:clamp(19px,5vw,29px);line-height:1;padding-top:6px;white-space:nowrap;
+    background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .logo .llc{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--slate);align-self:flex-end;padding-bottom:8px}
+  nav.main{margin-left:auto;display:flex;gap:26px}
+  nav.main a{
+    font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none;
+    padding:6px 0;border-bottom:2px solid transparent;
+  }
+  nav.main a:hover{color:var(--violet);border-bottom-color:var(--violet)}
+  .call{
+    display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);
+    font-size:15px;font-weight:700;color:#fff;background:var(--violet);
+    padding:11px 20px;border-radius:6px;text-decoration:none;white-space:nowrap;
+    box-shadow:0 2px 0 var(--plum);
+  }
+  .call:hover{background:var(--plum);box-shadow:0 2px 0 #3F125E}
+  .call svg{width:16px;height:16px;flex:none}
+  .menu-btn{display:none;flex:none}
+
+  /* mobile nav panel */
+  #mnav{
+    display:none;border-top:1px solid var(--line);background:var(--ground);
+    box-shadow:0 14px 30px -18px rgba(42,27,51,.5);
+  }
+  #mnav.open{display:block}
+  #mnav a{
+    display:block;padding:16px 28px;font-size:17px;font-weight:600;
+    color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);
+  }
+  #mnav a:last-child{border-bottom:0}
+  #mnav a:hover,#mnav a:focus{background:var(--linen);color:var(--violet)}
+
+  /* ---------------- photo placeholders ---------------- */
+  .ph{
+    position:relative;background:
+      repeating-linear-gradient(45deg,rgba(164,183,201,.14) 0 12px,rgba(164,183,201,.05) 12px 24px),
+      var(--linen);
+    border:1.5px dashed var(--dusty);border-radius:10px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:24px;gap:8px;color:var(--slate);min-height:180px;
+  }
+  .ph svg{width:26px;height:26px;opacity:.7}
+  .ph .t{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .ph .d{font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-mute);max-width:30ch}
+
+  /* ---------------- hero ---------------- */
+  .hero{padding:76px 0 68px;border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(42px,5.2vw,64px);font-weight:500;margin:0 0 20px}
+  .hero h1 em{font-style:italic;color:var(--violet)}
+  .hero .lede{font-size:19px;color:var(--ink-soft);margin:0 0 32px;max-width:46ch}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+  .btn{
+    font-family:var(--sans);font-size:16px;font-weight:700;padding:15px 28px;border-radius:6px;
+    text-decoration:none;display:inline-block;border:2px solid transparent;cursor:pointer;
+  }
+  .btn-primary{background:var(--violet);color:#fff;box-shadow:0 3px 0 var(--plum)}
+  .btn-primary:hover{background:var(--plum);box-shadow:0 3px 0 #3F125E}
+  .btn-ghost{background:transparent;color:var(--plum);border-color:var(--dusty)}
+  .btn-ghost:hover{border-color:var(--violet);color:var(--violet)}
+  .btn:focus-visible{outline:3px solid var(--slate);outline-offset:3px}
+  .hero-note{font-size:14.5px;color:var(--ink-mute);display:flex;align-items:center;gap:9px}
+  .hero-note svg{width:16px;height:16px;color:var(--rose);flex:none}
+  .hero .ph{min-height:430px;border-radius:12px}
+
+  /* ---------------- trust strip ---------------- */
+  .trust{background:var(--linen);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:32px;padding-bottom:32px}
+  .trust div{text-align:center;padding:0 12px;border-right:1px solid var(--line)}
+  .trust div:last-child{border-right:0}
+  .trust .n{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--plum);line-height:1;display:block}
+  .trust .l{font-size:13px;color:var(--ink-soft);margin-top:7px;display:block;line-height:1.4}
+
+  /* ---------------- sections ---------------- */
+  section{padding:88px 0}
+  .sec-head{max-width:60ch;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(32px,4.2vw,46px);margin-bottom:14px}
+  .sec-head p{font-size:18px;color:var(--ink-soft);margin:0}
+
+  /* services */
+  .services{background:var(--ground)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:34px 30px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;
+  }
+  .card.feature{border-color:var(--violet);box-shadow:var(--shadow-md);position:relative}
+  .card.feature::before{
+    content:"Her specialty";position:absolute;top:-11px;left:30px;
+    background:var(--violet);color:#fff;font-family:var(--sans);font-size:11px;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:20px;
+  }
+  .card .ic{width:36px;height:36px;color:var(--violet);margin-bottom:18px}
+  .card h3{font-size:26px;margin-bottom:10px}
+  .card p{font-size:15.5px;color:var(--ink-soft);margin:0 0 18px;line-height:1.6}
+  .card ul{margin:0 0 22px;padding-left:19px;font-size:14.5px;color:var(--ink-soft)}
+  .card li{margin-bottom:6px}
+  .card .price{
+    margin-top:auto;padding-top:18px;border-top:1px solid var(--line);
+    font-size:15px;font-weight:700;color:var(--plum);font-variant-numeric:tabular-nums;
+  }
+  .card .price s{color:var(--ink-mute);font-weight:400;font-size:13px;text-decoration:none;display:block;margin-top:3px}
+
+  /* gallery */
+  .gallery{background:var(--linen);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+  .pair{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow-sm)}
+  .pair .duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .pair .duo .ph{min-height:200px;border-radius:8px;padding:14px}
+  .pair .cap{font-size:14px;color:var(--ink-soft);margin:14px 4px 4px;line-height:1.5}
+  .pair .cap b{color:var(--ink);display:block;font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:2px}
+
+  /* about */
+  .about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+  .about .ph{min-height:400px;border-radius:12px}
+  .about h2{font-size:clamp(32px,4.2vw,46px);margin-bottom:20px}
+  .about p{color:var(--ink-soft);font-size:17.5px;margin:0 0 18px;max-width:56ch}
+  .about .sig{
+    font-family:var(--script);font-size:34px;color:var(--violet);margin-top:26px;line-height:1;
+  }
+
+  /* process */
+  .process{background:var(--ground);border-top:1px solid var(--line)}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px;counter-reset:s}
+  .step{counter-increment:s;position:relative;padding-top:54px}
+  .step::before{
+    content:counter(s);position:absolute;top:0;left:0;
+    width:40px;height:40px;border-radius:50%;background:var(--violet);color:#fff;
+    display:grid;place-items:center;font-family:var(--sans);font-size:16px;font-weight:700;
+  }
+  .step h4{font-size:22px;margin-bottom:8px}
+  .step p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.6}
+  .bring{
+    margin-top:52px;background:var(--surface);border:1px solid var(--line);
+    border-left:3px solid var(--rose);border-radius:0 12px 12px 0;padding:28px 32px;
+  }
+  .bring h4{font-size:24px;margin-bottom:12px}
+  .bring ul{margin:0;padding-left:20px;columns:2;column-gap:40px;font-size:15.5px;color:var(--ink-soft)}
+  .bring li{margin-bottom:8px;break-inside:avoid}
+
+  /* CTA band — the single full-bleed brand moment */
+  .cta{background:var(--violet);color:#fff;text-align:center;padding:86px 0}
+  .cta h2{color:#fff;font-size:clamp(34px,4.6vw,50px);font-weight:500;margin-bottom:16px}
+  .cta h2 em{font-style:italic;color:#F3C9E4}
+  .cta p{color:#E9D6F5;font-size:18.5px;max-width:50ch;margin:0 auto 34px}
+  .cta .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .cta .btn-white{background:#fff;color:var(--plum);box-shadow:0 3px 0 rgba(0,0,0,.22)}
+  .cta .btn-white:hover{background:#F6EDFB}
+  .cta .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+  .cta .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+  .cta .fine{color:#D8BCEC;font-size:14.5px;margin:26px 0 0}
+
+  /* contact */
+  .contact{background:var(--linen)}
+  .contact .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+  form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:34px;box-shadow:var(--shadow-sm)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+  .field label{font-size:13.5px;font-weight:700;color:var(--ink-soft);letter-spacing:.03em}
+  .field label .opt{font-weight:400;color:var(--ink-mute);text-transform:none;letter-spacing:0}
+  .field input,.field select,.field textarea{
+    font-family:var(--sans);font-size:16px;padding:13px 14px;border-radius:6px;
+    border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%;
+  }
+  .field textarea{resize:vertical;min-height:96px}
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(139,38,205,.16);
+  }
+  form .submit{width:100%;text-align:center;border:0;font-size:17px;padding:16px}
+  form .assure{font-size:13.5px;color:var(--ink-mute);text-align:center;margin:14px 0 0}
+
+  .info h3{font-size:27px;margin-bottom:6px}
+  .info .block{margin-bottom:30px}
+  .info .line{display:flex;gap:12px;align-items:flex-start;margin-bottom:11px;font-size:16px;color:var(--ink-soft)}
+  .info .line svg{width:18px;height:18px;color:var(--violet);flex:none;margin-top:4px}
+  .info .line a{color:var(--plum);font-weight:600;text-decoration:none}
+  .info .line a:hover{text-decoration:underline}
+  .hours{width:100%;font-size:15.5px;border-collapse:collapse}
+  .hours td{padding:7px 0;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+  .hours td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .hours tr:last-child td{border-bottom:0}
+  .info .ph{min-height:190px;margin-top:8px}
+
+  /* footer */
+  footer.site{background:var(--ink);color:#CFC2D6;padding:64px 0 40px}
+  footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+  footer.site h4{color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+  footer.site p{font-size:15px;margin:0 0 10px;line-height:1.6}
+  footer.site a{color:#CFC2D6;text-decoration:none;font-size:15px;display:block;margin-bottom:9px}
+  footer.site a:hover{color:#fff;text-decoration:underline}
+  footer .brandline{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+  footer .brandline .word{font-family:var(--script);font-size:26px;line-height:1;padding-top:5px;
+    background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+  footer .brandline svg{width:24px;height:35px}
+  .socials{display:flex;gap:12px;margin-top:16px}
+  .socials a{
+    width:38px;height:38px;border-radius:50%;border:1px solid #4A3B54;
+    display:grid;place-items:center;margin:0;
+  }
+  .socials a:hover{border-color:var(--rose);background:rgba(199,75,136,.16)}
+  .socials svg{width:17px;height:17px}
+  .legal{
+    border-top:1px solid #3D2F48;margin-top:44px;padding-top:24px;
+    font-size:13.5px;color:#9585A0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  }
+
+  /* Nav collapses well before the layout does — the wordmark is wide. */
+  @media (max-width:1000px){
+    nav.main{display:none}
+    .menu-btn{
+      display:grid;place-items:center;margin-left:auto;width:44px;height:44px;
+      border:1px solid var(--line);border-radius:6px;background:var(--surface);cursor:pointer;
+    }
+    .menu-btn svg{width:20px;height:20px;color:var(--ink)}
+  }
+  @media (max-width:900px){
+    .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:38px}
+    .hero .ph{min-height:280px;order:-1}
+    .about .ph{min-height:300px}
+    footer.site .wrap{grid-template-columns:1fr 1fr}
+    .trust .wrap{grid-template-columns:1fr 1fr;gap:26px}
+    .trust div:nth-child(2){border-right:0}
+    .logo .llc{display:none}
+  }
+  @media (max-width:700px){
+    body{font-size:16px}
+    section{padding:60px 0}
+    .wrap{padding:0 20px}
+    header.site .wrap{height:70px;gap:12px}
+    .logo .word{padding-top:4px}
+    .call span{display:none}
+    .call{padding:12px 14px}
+    #mnav a{padding:15px 20px}
+    .bring ul{columns:1}
+    .bring{padding:24px 22px}
+    .pair .duo{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr;gap:22px}
+    .trust div{border-right:0;border-bottom:1px solid var(--line);padding-bottom:20px}
+    .trust div:last-child{border-bottom:0;padding-bottom:0}
+    .grid2{grid-template-columns:1fr}
+    footer.site .wrap{grid-template-columns:1fr}
+    form{padding:24px 20px}
+    .hero{padding:48px 0 52px}
+    .cta{padding:64px 0}
+    .draft .wrap{gap:10px}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<!-- ============ DRAFT NOTICE ============ -->
+<div class="draft">
+  <div class="wrap">
+    <b>Draft mockup</b>
+    <p>Layout and colours are real. <em>Prices, hours, years of experience and all photographs are placeholders</em> waiting on answers from the intake form — and the business name is still to be confirmed.</p>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Custom Stitch Studio home">
+      <svg viewBox="0 0 30 44" fill="none" aria-hidden="true">
+        <ellipse cx="15" cy="5.5" rx="9" ry="2.6" fill="#A4B7C9"/>
+        <circle cx="15" cy="7.5" r="2.6" fill="#A4B7C9"/>
+        <path d="M15 10c-2.6 0-4.2 1.7-4.2 4.2 0 2 .5 3.4.5 5.2 0 3.4-3.6 8.6-6.3 14.2-1.2 2.5-1 4.4 1 5.6 2.4 1.4 6 2 9 2s6.6-.6 9-2c2-1.2 2.2-3.1 1-5.6-2.7-5.6-6.3-10.8-6.3-14.2 0-1.8.5-3.2.5-5.2 0-2.5-1.6-4.2-4.2-4.2z" fill="#A4B7C9"/>
+      </svg>
+      <span class="word">CustomStitchStudio</span>
+      <span class="llc">LLC</span>
+    </a>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#gallery">Her Work</a>
+      <a href="#about">About</a>
+      <a href="#process">What to Expect</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="call" href="tel:+19037440671">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>(903) 744-0671</span>
+    </a>
+  </div>
+  <div id="mnav">
+    <a href="#services">Services</a>
+    <a href="#gallery">Her Work</a>
+    <a href="#about">About</a>
+    <a href="#process">What to Expect</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+<script>
+  (function(){
+    var btn = document.getElementById('menuBtn');
+    var nav = document.getElementById('mnav');
+    if(!btn || !nav) return;
+    function close(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Open menu'); }
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    nav.addEventListener('click', function(e){ if(e.target.tagName === 'A') close(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+  })();
+</script>
+
+<!-- ============ HERO ============ -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Tyler, Texas · By appointment</p>
+      <h1>Wedding gown alterations, <em>fitted by hand</em></h1>
+      <p class="lede">Twenty-five years of bridal and special-occasion tailoring on Old Bullard Road. One seamstress, start to finish — the person who pins your gown is the person who sews it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Book a Fitting</a>
+        <a class="btn btn-ghost" href="#gallery">See Her Work</a>
+      </div>
+      <p class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.6.8-4.9 4.6 1.3 6.8L12 17.2 6.1 20.5l1.3-6.8L2.5 9.1l6.6-.8z"/></svg>
+        Brides: book about two months before the wedding date.
+      </p>
+    </div>
+    <div class="ph">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      <span class="t">Hero photograph</span>
+      <span class="d">Her hands pinning a gown on the dress form, or a finished bride. Shot wide, warm light, her workspace visible.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div><span class="n">25</span><span class="l">years sewing</span></div>
+    <div><span class="n">1</span><span class="l">seamstress, every stitch</span></div>
+    <div><span class="n">2–3</span><span class="l">fittings for a bridal gown</span></div>
+    <div><span class="n">Tyler</span><span class="l">Old Bullard Rd, Suite 703</span></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What she does</p>
+      <h2>From a hem to a gown rebuilt from the seams out</h2>
+      <p>Every job starts with a fitting in the studio. Quotes are given in person, once she has seen the garment on you.</p>
+    </div>
+    <div class="cards">
+      <div class="card feature">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.7 2.5-2.6 4.8-2.6 6.9 0 1.5.5 2.8 1.3 3.8L9 22h6l-1.7-9.3c.8-1 1.3-2.3 1.3-3.8 0-2.1-.9-4.4-2.6-6.9z"/></svg>
+        <h3>Bridal</h3>
+        <p>The work that takes the most skill and the most time. Two to three fittings, finished well before the date.</p>
+        <ul>
+          <li>Hems, including horsehair and lace</li>
+          <li>Bustles — American, French, ballroom</li>
+          <li>Taking in or letting out the bodice</li>
+          <li>Adding sleeves, straps, or a modesty panel</li>
+          <li>Bridesmaids and mother-of-the-bride</li>
+        </ul>
+        <p class="price">From $250<s>Placeholder — pending her price list</s></p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.6 15.4M14.4 14.4L20 20M8.6 8.6l2.4 2.4"/></svg>
+        <h3>Special Occasion</h3>
+        <p>Quinceañera, prom, homecoming, and evening wear made to fit the person wearing it.</p>
+        <ul>
+          <li>Resizing bodices and waists</li>
+          <li>Strap and neckline adjustments</li>
+          <li>Hemming full and layered skirts</li>
+          <li>Beading and appliqué repair</li>
+        </ul>
+        <p class="price">From $60<s>Placeholder — pending her price list</s></p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l6-4 3 2 3-2 6 4-3 4-2-1v11H8V10L6 11z"/></svg>
+        <h3>Everyday &amp; Repairs</h3>
+        <p>The ordinary things, done properly and returned quickly.</p>
+        <ul>
+          <li>Trouser and skirt hems</li>
+          <li>Taking in shirts and dresses</li>
+          <li>Zipper replacement</li>
+          <li>Buttons, seams, and tears</li>
+        </ul>
+        <p class="price">From $15<s>Placeholder — pending her price list</s></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Her work</p>
+      <h2>Before, and after</h2>
+      <p>This section will do more to win a bride than anything else on the page. It needs real photographs and written permission from the client in each one.</p>
+    </div>
+    <div class="pairs">
+      <div class="pair">
+        <div class="duo">
+          <div class="ph"><span class="t">Before</span><span class="d">Gown as purchased, off the rack</span></div>
+          <div class="ph"><span class="t">After</span><span class="d">Same gown, fitted</span></div>
+        </div>
+        <p class="cap"><b>Bodice taken in four sizes</b>Same gown, same bride, six weeks apart.</p>
+      </div>
+      <div class="pair">
+        <div class="duo">
+          <div class="ph"><span class="t">Before</span><span class="d">Train dragging, unbustled</span></div>
+          <div class="ph"><span class="t">After</span><span class="d">French bustle, ready to dance</span></div>
+        </div>
+        <p class="cap"><b>A French bustle in nine points</b>Built so her maid of honour could fasten it in under a minute.</p>
+      </div>
+      <div class="pair">
+        <div class="duo">
+          <div class="ph"><span class="t">Before</span><span class="d">Sleeveless as bought</span></div>
+          <div class="ph"><span class="t">After</span><span class="d">Lace sleeves added</span></div>
+        </div>
+        <p class="cap"><b>Sleeves cut from the veil</b>Matched lace, added to a gown that had none.</p>
+      </div>
+      <div class="pair">
+        <div class="duo">
+          <div class="ph"><span class="t">Before</span><span class="d">Mother's gown, stored 30 years</span></div>
+          <div class="ph"><span class="t">After</span><span class="d">Restored and refitted</span></div>
+        </div>
+        <p class="cap"><b>An heirloom brought back</b>Reinforced, cleaned at the seams, and refitted for her daughter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="ph">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span class="t">Portrait</span>
+      <span class="d">Her at the machine, or holding a finished gown. Not a stock photo, and not a selfie — worth an hour of someone's time with a decent camera.</span>
+    </div>
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>I have been sewing since I was a girl</h2>
+      <p>I learned on my mother's machine, and I have been altering wedding gowns for twenty-five years. When you bring me a dress, I am the one who pins it, I am the one who sews it, and I am the one who hands it back to you.</p>
+      <p>There is no counter here and no queue of anonymous tailors. There is a studio on Old Bullard Road, a fitting mirror, and enough time set aside to get your gown right before the day you need it.</p>
+      <p>Come in with the shoes you plan to wear. We will start there.</p>
+      <p class="sig">Ana</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What to expect</p>
+      <h2>How a fitting works</h2>
+      <p>Answering this on the page saves her repeating it in Messenger a dozen times a week.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h4>Book</h4>
+        <p>Call, text, or send the form below. She will reply the same day with a time.</p>
+      </div>
+      <div class="step">
+        <h4>First fitting</h4>
+        <p>Bring the garment and your shoes. She pins, measures, and quotes the work before anything is cut.</p>
+      </div>
+      <div class="step">
+        <h4>The work</h4>
+        <p>Most everyday alterations come back within a week. Bridal takes two to three fittings across a few weeks.</p>
+      </div>
+      <div class="step">
+        <h4>Final try-on</h4>
+        <p>You put it on one last time in the studio. If anything is off, it does not leave until it is right.</p>
+      </div>
+    </div>
+    <div class="bring">
+      <h4>Bring these to your first fitting</h4>
+      <ul>
+        <li>The exact shoes you will wear</li>
+        <li>The undergarments you will wear</li>
+        <li>Any belt, sash, or accessory</li>
+        <li>Your event date</li>
+        <li>A photo of how you want it to look</li>
+        <li>Someone whose eye you trust</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Bring in your gown <em>before</em> the rush</h2>
+    <p>Wedding season fills the calendar months ahead. If your date is in the next three months, get on the books now.</p>
+    <div class="row">
+      <a class="btn btn-white" href="#contact">Request a Fitting</a>
+      <a class="btn btn-outline" href="tel:+19037440671">Call (903) 744-0671</a>
+    </div>
+    <p class="fine">Placeholder copy — the seasonal wording depends on how far out she is actually booking.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!--
+        Form delivery via Web3Forms — works on Vercel, Netlify, Cloudflare Pages or
+        anywhere else, because it is just a POST to their endpoint. Free tier is
+        250 submissions/month and commercial use is allowed.
+
+        SETUP (2 minutes, no account needed):
+          1. Go to web3forms.com, enter her email, and they send you an access key
+          2. Paste that key below, replacing YOUR-ACCESS-KEY-HERE
+          3. Set the redirect URL below to your real domain
+        Until you do that, the form will not deliver anything.
+      -->
+      <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE">
+      <input type="hidden" name="subject" value="New fitting request from the website">
+      <input type="hidden" name="from_name" value="CustomStitchStudio website">
+      <!-- TODO: replace with your real domain once deployed -->
+      <input type="hidden" name="redirect" value="https://example.com/thanks.html">
+      <!-- Honeypot: bots fill this in, people never see it. -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="sec-head" style="margin-bottom:26px">
+        <h2 style="font-size:34px">Request a fitting</h2>
+        <p style="font-size:16px">Tell her what you have and when you need it, and she will come back with a time.</p>
+      </div>
+      <div class="grid2">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="garment">What garment?</label>
+        <select id="garment" name="garment">
+          <option>Wedding gown</option>
+          <option>Bridesmaid or mother-of-the-bride</option>
+          <option>Quinceañera or prom dress</option>
+          <option>Everyday clothing</option>
+          <option>Repair</option>
+          <option>Something custom made</option>
+        </select>
+      </div>
+      <div class="grid2">
+        <div class="field">
+          <label for="date">Event date <span class="opt">— or leave blank</span></label>
+          <input id="date" name="event_date" type="date">
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="opt">— optional</span></label>
+          <input id="email" name="email" type="email" autocomplete="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="msg">What needs doing?</label>
+        <textarea id="msg" name="details" placeholder="Hem is too long, bodice is loose at the back…"></textarea>
+      </div>
+      <button class="btn btn-primary submit" type="submit">Send Request</button>
+      <p class="assure">She reads every message herself and usually replies the same day.</p>
+    </form>
+
+    <div class="info">
+      <div class="block">
+        <h3>The studio</h3>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>4411 Old Bullard Rd, Suite 703<br>Tyler, Texas 75703</span>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <a href="tel:+19037440671">(903) 744-0671</a>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <a href="mailto:customstitchstudiollc@gmail.com">customstitchstudiollc@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><td>Monday – Friday</td><td>10:00 – 6:00</td></tr>
+          <tr><td>Saturday</td><td>10:00 – 2:00</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+          <tr><td>Evenings</td><td>By appointment</td></tr>
+        </table>
+        <p style="font-size:13.5px;color:var(--ink-mute);margin:12px 0 0">Placeholder hours — pending her answer.</p>
+      </div>
+
+      <div class="block">
+        <h3>Find her</h3>
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m1 6 7-3 8 3 7-3v15l-7 3-8-3-7 3z"/><path d="M8 3v15M16 6v15"/></svg>
+          <span class="t">Google map embed</span>
+          <span class="d">Pinned to Suite 703. Set up her Google Business Profile first — the same listing feeds this map and Google search.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="brandline">
+        <svg viewBox="0 0 30 44" fill="none" aria-hidden="true">
+          <ellipse cx="15" cy="5.5" rx="9" ry="2.6" fill="#A4B7C9"/>
+          <circle cx="15" cy="7.5" r="2.6" fill="#A4B7C9"/>
+          <path d="M15 10c-2.6 0-4.2 1.7-4.2 4.2 0 2 .5 3.4.5 5.2 0 3.4-3.6 8.6-6.3 14.2-1.2 2.5-1 4.4 1 5.6 2.4 1.4 6 2 9 2s6.6-.6 9-2c2-1.2 2.2-3.1 1-5.6-2.7-5.6-6.3-10.8-6.3-14.2 0-1.8.5-3.2.5-5.2 0-2.5-1.6-4.2-4.2-4.2z" fill="#A4B7C9"/>
+        </svg>
+        <span class="word">CustomStitchStudio</span>
+      </div>
+      <p>Wedding gown and special-occasion alterations in Tyler, Texas. Serving Tyler, Whitehouse, Flint, Bullard, Lindale, and Chandler.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#services">Bridal alterations</a>
+      <a href="#services">Special occasion</a>
+      <a href="#services">Everyday &amp; repairs</a>
+      <a href="#gallery">Her work</a>
+      <a href="#process">What to expect</a>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>4411 Old Bullard Rd, Suite 703<br>Tyler, Texas 75703</p>
+      <a href="tel:+19037440671">(903) 744-0671</a>
+      <a href="mailto:customstitchstudiollc@gmail.com">customstitchstudiollc@gmail.com</a>
+      <p style="margin-top:12px">Mon–Fri 10–6 · Sat 10–2 · Sun closed</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="legal">
+      <span>© 2026 CustomStitchStudio LLC · Tyler, Texas</span>
+      <span>Draft mockup — not a live website</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
