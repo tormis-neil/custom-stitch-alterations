@@ -12,7 +12,7 @@ const WIDTHS = [320, 360, 390, 414, 600, 768, 834, 1024, 1280, 1440, 1920];
 const PAGES = ['index.html', 'thanks.html'];
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined });
   let failures = 0;
 
   for (const file of PAGES) {

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Wedding gown and special-occasion alterations in Tyler, Texas. Twenty-five years of bridal tailoring on Old Bullard Road. By appointment &mdash; call (903) 744-0671.">
+<meta name="description" content="Wedding gown and special-occasion alterations in Tyler, Texas. Bridal tailoring on Old Bullard Road, by appointment &mdash; call (903) 744-0671.">
 <meta name="theme-color" content="#8B26CD">
 
 <!-- TODO before launch: set the real domain here and add og-image.jpg (1200x630px) -->
 <link rel="canonical" href="https://example.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wedding Gown Alterations in Tyler, Texas">
-<meta property="og:description" content="Twenty-five years of bridal and special-occasion tailoring. One seamstress, start to finish.">
+<meta property="og:description" content="Bridal and special-occasion tailoring. One seamstress, start to finish.">
 <meta property="og:image" content="/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -152,14 +152,6 @@
   .hero-note svg{width:16px;height:16px;color:var(--rose);flex:none}
   .hero .ph{min-height:430px;border-radius:12px}
 
-  /* ---------------- trust strip ---------------- */
-  .trust{background:var(--linen);border-bottom:1px solid var(--line)}
-  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:32px;padding-bottom:32px}
-  .trust div{text-align:center;padding:0 12px;border-right:1px solid var(--line)}
-  .trust div:last-child{border-right:0}
-  .trust .n{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--plum);line-height:1;display:block}
-  .trust .l{font-size:13px;color:var(--ink-soft);margin-top:7px;display:block;line-height:1.4}
-
   /* ---------------- sections ---------------- */
   section{padding:88px 0}
   .sec-head{max-width:60ch;margin-bottom:44px}
@@ -190,15 +182,6 @@
   }
   .card .price s{color:var(--ink-mute);font-weight:400;font-size:13px;text-decoration:none;display:block;margin-top:3px}
 
-  /* gallery */
-  .gallery{background:var(--linen);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
-  .pair{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow-sm)}
-  .pair .duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .pair .duo .ph{min-height:200px;border-radius:8px;padding:14px}
-  .pair .cap{font-size:14px;color:var(--ink-soft);margin:14px 4px 4px;line-height:1.5}
-  .pair .cap b{color:var(--ink);display:block;font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:2px}
-
   /* about */
   .about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
   .about .ph{min-height:400px;border-radius:12px}
@@ -207,37 +190,6 @@
   .about .sig{
     font-family:var(--script);font-size:34px;color:var(--violet);margin-top:26px;line-height:1;
   }
-
-  /* process */
-  .process{background:var(--ground);border-top:1px solid var(--line)}
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px;counter-reset:s}
-  .step{counter-increment:s;position:relative;padding-top:54px}
-  .step::before{
-    content:counter(s);position:absolute;top:0;left:0;
-    width:40px;height:40px;border-radius:50%;background:var(--violet);color:#fff;
-    display:grid;place-items:center;font-family:var(--sans);font-size:16px;font-weight:700;
-  }
-  .step h4{font-size:22px;margin-bottom:8px}
-  .step p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.6}
-  .bring{
-    margin-top:52px;background:var(--surface);border:1px solid var(--line);
-    border-left:3px solid var(--rose);border-radius:0 12px 12px 0;padding:28px 32px;
-  }
-  .bring h4{font-size:24px;margin-bottom:12px}
-  .bring ul{margin:0;padding-left:20px;columns:2;column-gap:40px;font-size:15.5px;color:var(--ink-soft)}
-  .bring li{margin-bottom:8px;break-inside:avoid}
-
-  /* CTA band — the single full-bleed brand moment */
-  .cta{background:var(--violet);color:#fff;text-align:center;padding:86px 0}
-  .cta h2{color:#fff;font-size:clamp(34px,4.6vw,50px);font-weight:500;margin-bottom:16px}
-  .cta h2 em{font-style:italic;color:#F3C9E4}
-  .cta p{color:#E9D6F5;font-size:18.5px;max-width:50ch;margin:0 auto 34px}
-  .cta .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .cta .btn-white{background:#fff;color:var(--plum);box-shadow:0 3px 0 rgba(0,0,0,.22)}
-  .cta .btn-white:hover{background:#F6EDFB}
-  .cta .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
-  .cta .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
-  .cta .fine{color:#D8BCEC;font-size:14.5px;margin:26px 0 0}
 
   /* contact */
   .contact{background:var(--linen)}
@@ -307,8 +259,6 @@
     .hero .ph{min-height:280px;order:-1}
     .about .ph{min-height:300px}
     footer.site .wrap{grid-template-columns:1fr 1fr}
-    .trust .wrap{grid-template-columns:1fr 1fr;gap:26px}
-    .trust div:nth-child(2){border-right:0}
     .logo .llc{display:none}
   }
   @media (max-width:700px){
@@ -320,17 +270,10 @@
     .call span{display:none}
     .call{padding:12px 14px}
     #mnav a{padding:15px 20px}
-    .bring ul{columns:1}
-    .bring{padding:24px 22px}
-    .pair .duo{grid-template-columns:1fr}
-    .trust .wrap{grid-template-columns:1fr;gap:22px}
-    .trust div{border-right:0;border-bottom:1px solid var(--line);padding-bottom:20px}
-    .trust div:last-child{border-bottom:0;padding-bottom:0}
     .grid2{grid-template-columns:1fr}
     footer.site .wrap{grid-template-columns:1fr}
     form{padding:24px 20px}
     .hero{padding:48px 0 52px}
-    .cta{padding:64px 0}
     .draft .wrap{gap:10px}
   }
   @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
@@ -358,10 +301,9 @@
       <span class="llc">LLC</span>
     </a>
     <nav class="main">
+      <a href="#top">Home</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Her Work</a>
       <a href="#about">About</a>
-      <a href="#process">What to Expect</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
@@ -373,10 +315,9 @@
     </a>
   </div>
   <div id="mnav">
+    <a href="#top">Home</a>
     <a href="#services">Services</a>
-    <a href="#gallery">Her Work</a>
     <a href="#about">About</a>
-    <a href="#process">What to Expect</a>
     <a href="#contact">Contact</a>
   </div>
 </header>
@@ -402,10 +343,10 @@
     <div>
       <p class="eyebrow">Tyler, Texas · By appointment</p>
       <h1>Wedding gown alterations, <em>fitted by hand</em></h1>
-      <p class="lede">Twenty-five years of bridal and special-occasion tailoring on Old Bullard Road. One seamstress, start to finish — the person who pins your gown is the person who sews it.</p>
+      <p class="lede">Bridal and special-occasion tailoring on Old Bullard Road. One seamstress, start to finish — the person who pins your gown is the person who sews it.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contact">Book a Fitting</a>
-        <a class="btn btn-ghost" href="#gallery">See Her Work</a>
+        <a class="btn btn-ghost" href="#services">See Services</a>
       </div>
       <p class="hero-note">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.6.8-4.9 4.6 1.3 6.8L12 17.2 6.1 20.5l1.3-6.8L2.5 9.1l6.6-.8z"/></svg>
@@ -417,16 +358,6 @@
       <span class="t">Hero photograph</span>
       <span class="d">Her hands pinning a gown on the dress form, or a finished bride. Shot wide, warm light, her workspace visible.</span>
     </div>
-  </div>
-</div>
-
-<!-- ============ TRUST STRIP ============ -->
-<div class="trust">
-  <div class="wrap">
-    <div><span class="n">25</span><span class="l">years sewing</span></div>
-    <div><span class="n">1</span><span class="l">seamstress, every stitch</span></div>
-    <div><span class="n">2–3</span><span class="l">fittings for a bridal gown</span></div>
-    <div><span class="n">Tyler</span><span class="l">Old Bullard Rd, Suite 703</span></div>
   </div>
 </div>
 
@@ -442,7 +373,7 @@
       <div class="card feature">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-1.7 2.5-2.6 4.8-2.6 6.9 0 1.5.5 2.8 1.3 3.8L9 22h6l-1.7-9.3c.8-1 1.3-2.3 1.3-3.8 0-2.1-.9-4.4-2.6-6.9z"/></svg>
         <h3>Bridal</h3>
-        <p>The work that takes the most skill and the most time. Two to three fittings, finished well before the date.</p>
+        <p>The work that takes the most skill and the most time.</p>
         <ul>
           <li>Hems, including horsehair and lace</li>
           <li>Bustles — American, French, ballroom</li>
@@ -450,7 +381,6 @@
           <li>Adding sleeves, straps, or a modesty panel</li>
           <li>Bridesmaids and mother-of-the-bride</li>
         </ul>
-        <p class="price">From $250<s>Placeholder — pending her price list</s></p>
       </div>
       <div class="card">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.6 15.4M14.4 14.4L20 20M8.6 8.6l2.4 2.4"/></svg>
@@ -462,7 +392,6 @@
           <li>Hemming full and layered skirts</li>
           <li>Beading and appliqué repair</li>
         </ul>
-        <p class="price">From $60<s>Placeholder — pending her price list</s></p>
       </div>
       <div class="card">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l6-4 3 2 3-2 6 4-3 4-2-1v11H8V10L6 11z"/></svg>
@@ -474,48 +403,6 @@
           <li>Zipper replacement</li>
           <li>Buttons, seams, and tears</li>
         </ul>
-        <p class="price">From $15<s>Placeholder — pending her price list</s></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GALLERY ============ -->
-<section class="gallery" id="gallery">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Her work</p>
-      <h2>Before, and after</h2>
-      <p>This section will do more to win a bride than anything else on the page. It needs real photographs and written permission from the client in each one.</p>
-    </div>
-    <div class="pairs">
-      <div class="pair">
-        <div class="duo">
-          <div class="ph"><span class="t">Before</span><span class="d">Gown as purchased, off the rack</span></div>
-          <div class="ph"><span class="t">After</span><span class="d">Same gown, fitted</span></div>
-        </div>
-        <p class="cap"><b>Bodice taken in four sizes</b>Same gown, same bride, six weeks apart.</p>
-      </div>
-      <div class="pair">
-        <div class="duo">
-          <div class="ph"><span class="t">Before</span><span class="d">Train dragging, unbustled</span></div>
-          <div class="ph"><span class="t">After</span><span class="d">French bustle, ready to dance</span></div>
-        </div>
-        <p class="cap"><b>A French bustle in nine points</b>Built so her maid of honour could fasten it in under a minute.</p>
-      </div>
-      <div class="pair">
-        <div class="duo">
-          <div class="ph"><span class="t">Before</span><span class="d">Sleeveless as bought</span></div>
-          <div class="ph"><span class="t">After</span><span class="d">Lace sleeves added</span></div>
-        </div>
-        <p class="cap"><b>Sleeves cut from the veil</b>Matched lace, added to a gown that had none.</p>
-      </div>
-      <div class="pair">
-        <div class="duo">
-          <div class="ph"><span class="t">Before</span><span class="d">Mother's gown, stored 30 years</span></div>
-          <div class="ph"><span class="t">After</span><span class="d">Restored and refitted</span></div>
-        </div>
-        <p class="cap"><b>An heirloom brought back</b>Reinforced, cleaned at the seams, and refitted for her daughter.</p>
       </div>
     </div>
   </div>
@@ -532,64 +419,11 @@
     <div>
       <p class="eyebrow">About</p>
       <h2>I have been sewing since I was a girl</h2>
-      <p>I learned on my mother's machine, and I have been altering wedding gowns for twenty-five years. When you bring me a dress, I am the one who pins it, I am the one who sews it, and I am the one who hands it back to you.</p>
+      <p>I learned on my mother's machine, and I have been altering wedding gowns ever since. When you bring me a dress, I am the one who pins it, I am the one who sews it, and I am the one who hands it back to you.</p>
       <p>There is no counter here and no queue of anonymous tailors. There is a studio on Old Bullard Road, a fitting mirror, and enough time set aside to get your gown right before the day you need it.</p>
       <p>Come in with the shoes you plan to wear. We will start there.</p>
       <p class="sig">Ana</p>
     </div>
-  </div>
-</section>
-
-<!-- ============ PROCESS ============ -->
-<section class="process" id="process">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">What to expect</p>
-      <h2>How a fitting works</h2>
-      <p>Answering this on the page saves her repeating it in Messenger a dozen times a week.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <h4>Book</h4>
-        <p>Call, text, or send the form below. She will reply the same day with a time.</p>
-      </div>
-      <div class="step">
-        <h4>First fitting</h4>
-        <p>Bring the garment and your shoes. She pins, measures, and quotes the work before anything is cut.</p>
-      </div>
-      <div class="step">
-        <h4>The work</h4>
-        <p>Most everyday alterations come back within a week. Bridal takes two to three fittings across a few weeks.</p>
-      </div>
-      <div class="step">
-        <h4>Final try-on</h4>
-        <p>You put it on one last time in the studio. If anything is off, it does not leave until it is right.</p>
-      </div>
-    </div>
-    <div class="bring">
-      <h4>Bring these to your first fitting</h4>
-      <ul>
-        <li>The exact shoes you will wear</li>
-        <li>The undergarments you will wear</li>
-        <li>Any belt, sash, or accessory</li>
-        <li>Your event date</li>
-        <li>A photo of how you want it to look</li>
-        <li>Someone whose eye you trust</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA BAND ============ -->
-<section class="cta">
-  <div class="wrap">
-    <h2>Bring in your gown <em>before</em> the rush</h2>
-    <p>Wedding season fills the calendar months ahead. If your date is in the next three months, get on the books now.</p>
-    <div class="row">
-      <a class="btn btn-white" href="#contact">Request a Fitting</a>
-      <a class="btn btn-outline" href="tel:+19037440671">Call (903) 744-0671</a>
-    </div>
-    <p class="fine">Placeholder copy — the seasonal wording depends on how far out she is actually booking.</p>
   </div>
 </section>
 
@@ -655,7 +489,7 @@
         <textarea id="msg" name="details" placeholder="Hem is too long, bodice is loose at the back…"></textarea>
       </div>
       <button class="btn btn-primary submit" type="submit">Send Request</button>
-      <p class="assure">She reads every message herself and usually replies the same day.</p>
+      <p class="assure">She reads every message herself.</p>
     </form>
 
     <div class="info">
@@ -721,8 +555,6 @@
       <a href="#services">Bridal alterations</a>
       <a href="#services">Special occasion</a>
       <a href="#services">Everyday &amp; repairs</a>
-      <a href="#gallery">Her work</a>
-      <a href="#process">What to expect</a>
     </div>
     <div>
       <h4>Visit</h4>
